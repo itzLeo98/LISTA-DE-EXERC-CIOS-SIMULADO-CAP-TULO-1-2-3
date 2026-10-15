@@ -1,0 +1,20 @@
+Questão 05. Estruturas de Repetição: Comparação entre for, while e do-while (Cap. 3) — As
+estruturas de repetição permitem a execução iterativa de instruções em C. Analise as características de
+for, while e do-while e responda fundamentadamente:
+
+a) Qual é a diferença essencial entre while e do-while em relação ao número mínimo de execuções do
+bloco de código e ao momento do teste condicional?
+
+O while testa a condição antes de executar o bloco, então se a condição começar falsa, ele roda zero vezes.
+Já o do-while executa o bloco pelo menos uma vez antes de fazer o teste no final.
+
+b) Em que cenários o laço for se apresenta como a escolha mais elegante e legível frente ao laço while?
+
+O laço for é perfeito e muito mais limpo quando a gente j
+á sabe exatamente quantas vezes o código vai repetir (geralmente usando uma variável de controle/contador)
+
+c) O trecho de código 'while (condicao);' (com ponto-e-vírgula ao final do cabeçalho) constitui um erro de
+compilação ou de lógica? O que acontece se condicao for verdadeira?
+
+Colocar um ponto e vírgula logo depois de while (condicao); é um erro de lógica grave. Isso cria um laço vazio que trava o programa (loop infinito) se a condição for verdadeira, 
+porque o ponto e vírgula encerra o comando ali mesmo e o bloco seguinte deixa de pertencer ao while.
